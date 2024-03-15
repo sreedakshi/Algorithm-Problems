@@ -1,0 +1,14 @@
+**Solution Summary**
+
+1) Initialize two pointers and move them from opposite ends.
+2) The first pointer starts at the beginning of the string and moves toward the middle, while the second pointer starts at the end and moves toward the middle.
+3) Compare the elements at each position to detect a nonmatching pair.
+4) If both pointers reach the middle of the string without encountering a nonmatching pair, the string is a palindrome.
+
+**Time Complexity**
+
+The time complexity is O(n/2) as the algorithm starts at the beginning and traverses only till it reaches half the string as the pointer at the end is moving towards the middle at the same time.
+
+**Space Complexity**
+
+The space complexity is O(1), since we use constant space to store two indexes.
