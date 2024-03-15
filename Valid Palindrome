@@ -1,6 +1,5 @@
 bool IsPalindrome(string inputString)
 {
-    // Replace this placeholder return statement with your code
     int begin = 0;
     int end = inputString.length() - 1;
 
