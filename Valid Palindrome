@@ -1,0 +1,15 @@
+bool IsPalindrome(string inputString)
+{
+    // Replace this placeholder return statement with your code
+    int begin = 0;
+    int end = inputString.length() - 1;
+
+    while (begin < end){
+        if (inputString[begin] != inputString[end]){
+            return false;
+        }
+        begin++;
+        end--;
+    }
+    return true;
+}
