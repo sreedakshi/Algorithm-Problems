@@ -1,0 +1,13 @@
+Solution summary
+Two pointers, right and left, are set at the head node.
+Move the right pointer n steps forward.
+If right reaches NULL, return head's next node.
+Move both right and left pointers forward till right reaches the last node.
+Relink the left node to the node at left's next to the next node.
+Return head.
+
+Time complexity
+The time complexity is O(n), where n is the number of nodes in the linked list.
+
+Space complexity
+The space complexity is O(1) because we use constant space to store two pointers.
