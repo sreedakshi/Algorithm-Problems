@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+EduLinkedListNode *RemoveNthLastNode(EduLinkedListNode *head, int n)
+{
+    EduLinkedListNode *left = head;
+    EduLinkedListNode *right = head;
+
+    for (int i = 0; i < n; i++){
+        right = right->next;
+    }
+
+    if (!right){  // edge case when n is the size of the linked list and right is a null pointer
+        return head->next;
+    }
+
+    while (right->next != nullptr){
+        right = right->next;
+        left = left->next;
+    }
+
+    left->next = left->next->next;
+
+    return head;
+}
